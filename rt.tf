@@ -31,7 +31,7 @@ resource "aws_route_table" "private1" {
 
   # A map of tags to assign to the resource
     tags = {
-      Name = "public"
+      Name = "private1"
     }
 }
 
@@ -49,6 +49,6 @@ resource "aws_route_table" "private2" {
 
   # A map of tags to assign to the resource
     tags = {
-      Name = "public"
+      Name = "private2"
     }
 }
