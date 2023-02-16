@@ -1,0 +1,24 @@
+resource "aws_route_table_association" "public1" {
+  # The subnet ID to create an association
+  subnet_id = aws_subnet.public_1.id
+
+  # The ID of the routing table to associate with
+  route_table_id = aws_route_table.public.id
+}
+
+
+resource "aws_route_table_association" "private_1" {
+  # The subnet ID to create an association
+  subnet_id = aws_subnet.private_1.id
+
+  # The ID of the routing table to associate with
+  route_table_id = aws_route_table.private1.id
+}
+
+resource "aws_route_table_association" "private_2" {
+  # The subnet ID to create an association
+  subnet_id = aws_subnet.private_2.id
+
+  # The ID of the routing table to associate with
+  route_table_id = aws_route_table.private2.id
+}
